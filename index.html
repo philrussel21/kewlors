@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Kewlors</title>
+		<link
+			rel="stylesheet"
+			href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+		/>
+		<link rel="stylesheet" href="style.css" />
+	</head>
+	<body class="position-relative text-center">
+		<form
+			action="#"
+			class="position-absolute container-fluid jumbotron text-center d-flex flex-column"
+		>
+			<h1 class="display-4">Kewlors</h1>
+			<p class="form-text text-muted">
+				The mathematical approach to Colour Harmony
+			</p>
+			<div class="form-group">
+				<label for="theorySelect">Colour Theory</label>
+				<select name="theory" id="theorySelect" class="form-control">
+					<option value="an">Analogous</option>
+					<option value="com" selected>Complementary</option>
+				</select>
+			</div>
+
+			<h2>
+				Base Colour
+				<svg
+					class="svg"
+					fill="none"
+					stroke="currentColor"
+					viewBox="0 0 24 24"
+					xmlns="http://www.w3.org/2000/svg"
+				>
+					<path
+						stroke-linecap="round"
+						stroke-linejoin="round"
+						stroke-width="2"
+						d="M13 16h-1v-4h-1m1-4h.01M21 12a9 9 0 11-18 0 9 9 0 0118 0z"
+					></path>
+				</svg>
+			</h2>
+			<div class="form-group">
+				<label for="hexColour">Hex Colour</label>
+				<input type="text" id="hexColour" class="form-control" readonly />
+			</div>
+			<div class="form-group">
+				<label for="rgbColour">RGB Colour</label>
+				<input type="text" id="rgbColour" class="form-control" readonly />
+			</div>
+			<div class="form-group">
+				<label for="hslColour">HSL Colour</label>
+				<input type="text" id="hslColour" class="form-control" readonly />
+			</div>
+			<div class="form-group">
+				<label for="color">Colour Picker</label>
+				<input
+					type="color"
+					id="color"
+					class="d-block w-50 mx-auto border-0 p-0"
+				/>
+			</div>
+			<small>© Phil Antiporda</small>
+			<a
+				class="d-block mx-auto mt-2"
+				href="https://github.com/philrussel21/JS-CA-lessons-N-challenges/tree/master/side-study/kewlors"
+				target="_blank"
+			>
+				<img src="github.png" alt="Github Logo" />
+			</a>
+		</form>
+		<section class="cont w-100 d-flex">
+			<div class="w-100 h-100 d-flex flex-column" id="base"></div>
+			<div class="w-100 h-100 d-flex flex-column" id="secDiv"></div>
+		</section>
+		<section
+			id="modal"
+			class="my-modal w-100 h-100 justify-content-center align-items-center hidden"
+		>
+			<div class="bg-info text-light font-weight-light rounded">
+				<div class="modal-header">
+					<h5 class="modal-title">Kewlors Usage</h5>
+					<button class="close">X</button>
+				</div>
+				<div class="modal-body">
+					<p>
+						To use the app, simply choose the desired base colour from the
+						colour picker provided. Scroll through the colour wheel and prepare
+						to be amazed!
+					</p>
+					<p>
+						Updates to include more colour theories, improve accessibility and
+						all other features are currently in the works and would be coming
+						soon. :)
+					</p>
+					<div class="modal-footer">
+						<small>© Phil Antiporda</small>
+					</div>
+				</div>
+			</div>
+		</section>
+		<script src="index.js"></script>
+	</body>
+</html>
+<!-- https://www.canva.com/colors/color-wheel/ -->
+<!-- 2 Analogous Colors, One +30 and One -30-->
+<!-- 1 Complementary -->
+<!-- User must be able to input via hex, rgb or hsl -->
+<!-- if analogous, base colour must be shown in the middle -->

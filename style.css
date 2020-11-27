@@ -1,0 +1,108 @@
+body {
+	height: 100vh;
+}
+.cont {
+	height: 100vh;
+}
+.position-absolute {
+	top: 50%;
+	left: 50%;
+	width: 280px;
+	transform: translate(-50%, -50%);
+	transition: width linear 1s;
+}
+.my-modal {
+	position: absolute;
+	top: 0;
+	left: 0;
+	background-color: rgba(0, 0, 0, 0.6);
+}
+.modal-body p {
+	font-size: 1.2rem;
+}
+.hidden {
+	display: none;
+}
+input[color] {
+	height: 2em;
+}
+
+.info-div {
+	flex-grow: 1;
+}
+.hex-output {
+	width: 6.5em;
+}
+.rgb-output {
+	width: 10em;
+}
+.hsl-output {
+	width: 12em;
+}
+.jumbotron {
+	padding: 2rem;
+}
+.display-4 {
+	font-weight: 800;
+}
+.svg {
+	width: 1em;
+	cursor: pointer;
+}
+h1 {
+	background: green;
+	background: -webkit-linear-gradient(
+		left,
+		orange,
+		yellow,
+		green,
+		cyan,
+		blue,
+		violet
+	);
+	background: -o-linear-gradient(
+		right,
+		orange,
+		yellow,
+		green,
+		cyan,
+		blue,
+		violet
+	);
+	background: -moz-linear-gradient(
+		to right,
+		red,
+		orange,
+		yellow,
+		cyan,
+		blue,
+		violet
+	);
+	background: linear-gradient(
+		to right,
+		red,
+		orange,
+		yellow,
+		cyan,
+		blue,
+		violet
+	);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+img {
+	width: 32px;
+}
+a {
+	width: 32px;
+}
+label {
+	font-size: 1.2rem;
+	font-weight: 400;
+}
+
+@media only screen and (max-width: 900px) {
+	.position-absolute {
+		width: 200px;
+	}
+}
